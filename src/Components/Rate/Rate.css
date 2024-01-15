@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+.rateContainer{
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+    padding: 32px;
+}
+.starWrapper{
+    width: 48px;
+    height: 48px;
+    background: var(--Dark-Blue, #262E38);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Overpass", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 30px 0px 7px 0px;
+}
+.questionText{
+    width: 340px;
+    color: var(--Light-Grey, #969FAD);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+}
+.numbersWrapper{
+    width: 341px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 24px 0px 32px 0px;
+    
+}
+.numbers{
+    width: 51px;
+    height: 51px;
+    background-color: #262E38;
+    border-radius: 50%;
+    border-width: 0px;
+    color: var(--Medium-Gray, #7C8798);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Overpass", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+}
+button{
+    width: 341px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 22.5px;
+    background: var(--Orange, #FC7614);
+    color: var(--Pure-White, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2px;
+    border-width: 0px;
+    text-transform: uppercase;
+}
