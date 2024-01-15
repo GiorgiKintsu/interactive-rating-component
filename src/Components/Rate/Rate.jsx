@@ -6,8 +6,9 @@ function Rate (props) {
     let numbers = [1,2,3,4,5];
     
     function makeRate(){
-        props.setRate(5)
+        console.log(props.rate);
     }
+
     
     return(
         <div className='rateContainer'>
@@ -17,9 +18,9 @@ function Rate (props) {
             <h2 className='question'>How did we do?</h2>
             <p className='questionText'>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             <div className='numbersWrapper'>
-                {numbers.map((num) => <button key={num} className='numbers'>{num}</button>)}
+                {numbers.map((num) => <button key={num} className='numbers' style={props.number === num ? {background: "#FC7614", color: "white"} : {}} onClick={() => (props.setNumber(num))}>{num}</button>)}
             </div>
-            <button onClick={makeRate}>Submit</button>
+            <button onClick={() => {props.number ? props.setSubmit(true) : null}}>Submit</button>
         </div>
     )
 }

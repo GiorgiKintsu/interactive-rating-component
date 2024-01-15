@@ -17,7 +17,7 @@
     justify-content: center;
 }
 .question{
-    color: var(--Pure-White, #FFF);
+    color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Overpass", sans-serif;
     font-size: 28px;
@@ -60,6 +60,11 @@
     font-weight: 700;
     line-height: 24px; /* 150% */
     letter-spacing: 0.2px;
+    cursor: pointer;
+}
+.numbers:hover{
+    background: var(--Medium-Gray, #7C8798);
+    color: #FFF;
 }
 button{
     width: 341px;
@@ -67,7 +72,7 @@ button{
     flex-shrink: 0;
     border-radius: 22.5px;
     background: var(--Orange, #FC7614);
-    color: var(--Pure-White, #FFF);
+    color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Overpass", sans-serif;
     font-size: 15px;
@@ -77,4 +82,9 @@ button{
     letter-spacing: 2px;
     border-width: 0px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover{
+    background: #FFF;
+    color: #FC7614;
 }
